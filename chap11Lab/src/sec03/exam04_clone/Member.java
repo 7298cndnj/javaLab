@@ -19,7 +19,7 @@ public class Member {
 public Member getMember() {
 	Member clone=null;
 	try {
-		cloned=(Member)clone();
+		clone=(Member)clone();
 	}catch(CloneNotSuppoertedException e) {
 		
 	  
