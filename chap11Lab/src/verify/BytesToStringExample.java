@@ -9,8 +9,11 @@ public class BytesToStringExample {
 		System.out.println( str ); // I love you
 		}
 
+<<<<<<< HEAD
 	
 	
+=======
+>>>>>>> refs/remotes/origin/master
 	}
 
 
