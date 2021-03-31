@@ -21,8 +21,10 @@ public class ValueCompareExample {
 		System.out.println("equals()°á°ú:"+obj3.equals(obj4));//true
 		System.out.println();
 	
-	
-	
+//test
+
+		
+		
 	}
 
 }
