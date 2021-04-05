@@ -1,0 +1,22 @@
+package sec04.exam01_field;
+
+public class UsingThis {
+	public int outterField = 10;
+
+	class Inner {
+		int innerField = 20;
+
+		void method() {
+			//람다식
+			MyFunctionalInterface fi= () -> {
+				System.out.println("outterField: " + outterField); //outterField:10
+				System.out.println("outterField: " + UsingThis.this.outterField + "\n");//UsingThis.this는 밖의 객체
+				
+				System.out.println("innerField: " + innerField);//innerField:20
+				System.out.println("innerField: " + this.innerField + "\n");//this는 안쪽 객체
+			};
+			fi.method();
+		}
+	}
+}
+
