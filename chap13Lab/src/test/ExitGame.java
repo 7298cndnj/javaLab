@@ -48,6 +48,7 @@ public class ExitGame {
 	sc.close();
 		}
 		}
+		//test
 		}
 	}
 }
