@@ -9,11 +9,11 @@ public class UsingThis {
 		void method() {
 			//람다식
 			MyFunctionalInterface fi= () -> {
-				System.out.println("outterField: " + outterField); //outterField:10
-				System.out.println("outterField: " + UsingThis.this.outterField + "\n");//UsingThis.this는 밖의 객체
+				System.out.println("outterField: " + outterField);
+				System.out.println("outterField: " + UsingThis.this.outterField + "\n");
 				
-				System.out.println("innerField: " + innerField);//innerField:20
-				System.out.println("innerField: " + this.innerField + "\n");//this는 안쪽 객체
+				System.out.println("innerField: " + innerField);
+				System.out.println("innerField: " + this.innerField + "\n");
 			};
 			fi.method();
 		}
