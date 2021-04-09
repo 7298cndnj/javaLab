@@ -13,6 +13,7 @@ public class MapAndReduceExample {
 			
 		double avg = studentList.stream()
 			//중간처리(학생 객체를 점수로 매핑)
+			//매개변수의 메소드 참조
 			.mapToInt(Student :: getScore)
 			//최종 처리(평균 점수)
 			.average()

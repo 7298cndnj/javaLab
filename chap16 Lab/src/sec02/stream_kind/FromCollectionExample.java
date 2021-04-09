@@ -11,7 +11,7 @@ public class FromCollectionExample {
 			new Student("신용권", 20),
 			new Student("유미선", 30)
 		);
-		
+		//리스트으로부터 스트림을 얻는다.
 		Stream<Student> stream = studentList.stream();
 		stream.forEach(s -> System.out.println(s.getName()));
 	}

@@ -19,7 +19,7 @@ public class Student {
 		// #2 작성 위치
 		if(obj instanceof Student) {
 			Student student=(Student)obj;
-			if(studentNum==student.studentNum)
+			if(student.hashCode()==this.hashCode())
 				return true;
 		}
 		return false;

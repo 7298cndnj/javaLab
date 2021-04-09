@@ -13,7 +13,13 @@ public class ParallelExample {
 		stream.forEach(ParallelExample :: print);
 		
 		System.out.println();
+		//람다식
+		//stream.forEach(t->ParallelExample.print(t));
 		
+		//정적메소드 참조
+//		stream.forEach(ParallelExample::print);
+//		System.out.println();
+
 		//병렬 처리
 		Stream<String> parallelStream = list.parallelStream();
 		parallelStream.forEach(ParallelExample :: print);
