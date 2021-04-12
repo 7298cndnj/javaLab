@@ -12,12 +12,12 @@ public class ReductionExample {
 		);
 		
 		int sum1 = studentList.stream()
-				.mapToInt(Student :: getScore)
-				.sum();
+				.mapToInt(Student :: getScore)//중간처리:매핑(student->intStream)
+				.sum();//최종처리:합계
 		
 		int sum2 = studentList.stream()
-				.map(Student :: getScore)
-				.reduce((a, b) -> a+b)
+				.map(Student :: getScore)//중간처리:매핑(Student->intStream)
+				.reduce((a, b) -> a+b)//최종처리
 				.get();
 		
 		int sum3 = studentList.stream()

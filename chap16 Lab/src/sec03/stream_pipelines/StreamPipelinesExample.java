@@ -2,6 +2,7 @@ package sec03.stream_pipelines;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.ToIntFunction;
 
 public class StreamPipelinesExample {
 	public static void main(String[] args) {
@@ -13,7 +14,26 @@ public class StreamPipelinesExample {
 		);
 		
 		double ageAvg =   list.stream()
+	/*			//중간처리
+			.filter(new Predicate<Member>() {
+				@Override
+				public boolean test(Member m) {
+					// TODO Auto-generated method stub
+					return false;
+				}
+				
+			})*/
 			.filter(m -> m.getSex()==Member.MALE)
+		/*	.mapToInt(new ToIntFunction<Member>() {
+				@Override
+				public int applyAsInt(Member m) {
+					// TODO Auto-generated method stub
+					return 0;
+				}
+			})*/
+			//람다식
+			//.mapToInt(m->m.getAge())
+			//매개 변수의 메소드 참조
 			.mapToInt(Member :: getAge)
 			.average()
 			.getAsDouble();
