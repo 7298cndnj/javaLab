@@ -34,7 +34,7 @@ public class RootController implements Initializable {
 				while(!stop) {
 					String strTime = sdf.format(new Date());
 					Platform.runLater(()->{
-						lblTime.setText(strTime);
+						lblTime.setText(strTime);//시간을 표시하는 UI변경코드
 					});
 					try { Thread.sleep(100); } catch (InterruptedException e) {}
 				}
