@@ -16,7 +16,7 @@ public class SystemOutExample {
 		}		
 		os.write(10);		
 
-		String hangul = "°¡³ª´Ù¶ó¸¶¹Ù»ç¾ÆÀÚÂ÷Ä«Å¸ÆÄÇÏ";
+		String hangul = "ï¿½ï¿½ï¿½ï¿½ï¿½Ù¶ó¸¶¹Ù»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä«Å¸ï¿½ï¿½ï¿½ï¿½";
 		byte[] hangulBytes = hangul.getBytes();
 		os.write(hangulBytes);
 		

@@ -4,27 +4,27 @@ import java.io.InputStream;
 
 public class SystemInExample1 {
 	public static void main(String[] args) throws Exception {		
-		System.out.println("== ╦ч╢╨ ==");
-		System.out.println("1. ©╧╠щ а╤х╦");
-		System.out.println("2. ©╧╠щ цБ╠щ");
-		System.out.println("3. ©╧╠щ ют╠щ");
-		System.out.println("4. а╬╥А го╠Б");
-		System.out.print("╦ч╢╨╦╕ ╪╠ецго╪╪©Д: ");
-		
-		InputStream is = System.in;
+		System.out.println("== О©╫ч╢О©╫ ==");
+		System.out.println("1. О©╫О©╫О©╫О©╫ О©╫О©╫х╦");
+		System.out.println("2. О©╫О©╫О©╫О©╫ О©╫О©╫О©╫");
+		System.out.println("3. О©╫О©╫О©╫О©╫ О©╫т╠О©╫");
+		System.out.println("4. О©╫О©╫О©╫О©╫ О©╫о╠О©╫");
+		System.out.print("О©╫ч╢О©╫О©╫О©╫ О©╫О©╫О©╫О©╫О©╫о╪О©╫О©╫О©╫: ");
+		//К╟■Л²╢М┼╦Й╦╟К╟≤Л²≤ Л·┘К═╔Л┼╓М┼╦К╕╪Л²└ Л┐²Л└╠М∙°К▀╓
+		InputStream is = System.in;//Л╫≤Л├■Л²≤ К╟■Л²╢М┼╦Й╦╟К╟≤ Л·┘К═╔Л┼╓М┼╦К╕╪
 		char inputChar = (char) is.read();			
 		switch(inputChar) {
 			case '1':
-				System.out.println("©╧╠щ а╤х╦╦╕ ╪╠ецго╪л╫ю╢о╢ы.");
+				System.out.println("О©╫О©╫О©╫О©╫ О©╫О©╫х╦О©╫О©╫ О©╫О©╫О©╫О©╫О©╫о╪л╫О©╫О©╫о╢О©╫.");
 				break;
 			case '2':
-				System.out.println("©╧╠щ цБ╠щ╦╕ ╪╠ецго╪л╫ю╢о╢ы.");
+				System.out.println("О©╫О©╫О©╫О©╫ О©╫О©╫щ╦О©╫ О©╫О©╫О©╫О©╫О©╫о╪л╫О©╫О©╫о╢О©╫.");
 				break;
 			case '3':
-				System.out.println("©╧╠щ ют╠щ╦╕ ╪╠ецго╪л╫ю╢о╢ы.");
+				System.out.println("О©╫О©╫О©╫О©╫ О©╫т╠щ╦О©╫ О©╫О©╫О©╫О©╫О©╫о╪л╫О©╫О©╫о╢О©╫.");
 				break;
 			case '4':
-				System.out.println("а╬╥А го╠Б╦╕ ╪╠ецго╪л╫ю╢о╢ы.");
+				System.out.println("О©╫О©╫О©╫О©╫ О©╫о╠Б╦╕ О©╫О©╫О©╫О©╫О©╫о╪л╫О©╫О©╫о╢О©╫.");
 				break;
 		}			
 	}

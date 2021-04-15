@@ -6,6 +6,7 @@ import java.io.InputStream;
 public class ReadExample1 {
 
 	public static void main(String[] args) throws Exception {
+		//바이트 기반의 입력 스트림
 		InputStream is = new FileInputStream("C:/Temp/test.txt");
 		int readByte;
 		while(true) {
